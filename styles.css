@@ -8,14 +8,14 @@ body {
   line-height: 1.5;
   color: #495057;
   text-align: left;
-  background-color: #6200ea;
+  background-color: #f8316f;
 }
 
 i {
   font-style: italic;
 }
 
-.container {
+.task-container {
   margin-top: 100px;
 }
 
@@ -79,37 +79,6 @@ i {
   overflow-x: hidden;
 }
 
-.list-group-item {
-  position: relative;
-  display: block;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: -1px;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-}
-
-.list-group {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.todo-indicator {
-  position: absolute;
-  width: 4px;
-  height: 60%;
-  border-radius: 0.3rem;
-  left: 0.625rem;
-  top: 20%;
-  opacity: 0.6;
-  transition: opacity 0.2s;
-}
-
-.bg-warning {
-  background-color: #f7b924 !important;
-}
-
 .widget-content {
   padding: 1rem;
   flex-direction: row;
@@ -141,6 +110,7 @@ i {
   position: relative;
   transition: color 0.15s, background-color 0.15s, border-color 0.15s,
     box-shadow 0.15s;
+  outline: none !important;
 }
 
 .btn-outline-success {
@@ -166,13 +136,29 @@ i {
   border-color: #3f6ad8;
 }
 
-.btn {
-  position: relative;
-  transition: color 0.15s, background-color 0.15s, border-color 0.15s,
-    box-shadow 0.15s;
-  outline: none !important;
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
 }
 
-.card-footer {
-  background-color: #fff;
+.footer-input {
+  width: 35%;
+}
+
+.main-search-button {
+  background: #4db7fe;
+}
+
+.main-search-button {
+  position: absolute;
+  right: 0px;
+  height: 50px;
+  width: 120px;
+  color: #fff;
+  top: 0;
+  border: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  cursor: pointer;
 }
